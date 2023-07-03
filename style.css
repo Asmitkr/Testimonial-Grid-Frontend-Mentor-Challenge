@@ -1,0 +1,161 @@
+*{
+    box-sizing:border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color:hsl(210, 46%, 95%);
+}
+
+.container{
+    width:95%px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding:5% 2%;
+}
+
+.box1{
+    background-color:hsl(263, 55%, 52%);
+    color:white;
+    position: relative;
+}
+
+.largefont{
+    position: relative;
+    top:-8px;
+    font-size:20.2px;
+    font-weight: 600;
+}
+
+.line{
+    position: relative;
+    top:-10px;
+    margin-bottom:-8px;
+    opacity:70%;
+}
+
+.verifiedgraduate{
+    position: relative;
+    top:-15px;
+    opacity:50%;
+    margin-top:-10px;
+    margin-left:35px;
+}
+
+.box2{
+    background-color:hsl(217, 19%, 35%);
+    color:white;
+}
+
+.box3{
+    background-color:hsl(0, 0%, 100%);
+}
+
+.box4{
+    color:white;
+    background-color:hsl(219, 29%, 14%);
+}
+
+.box5{
+    background-color:hsl(0, 0%, 100%);
+}
+
+.box1 , .box2 , .box3 , .box4 , .box5{
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.5);
+}
+
+.box3 .line , .box5 .line{
+    color:#48556a;
+}
+
+img , .name{
+    display: inline-block;
+}
+
+.picture{
+    border-radius: 90%;
+    border:1px solid #7541c8;
+    width:30px;
+    height:30px;
+}
+
+.quote{
+    position: absolute;
+    right:25px;
+    top:0px;
+}
+
+.name{
+    position:relative;
+    top:-15px;
+    z-index:2;
+}
+
+@media (min-width: 576px){
+
+    .largefont{
+        font-size:13px;
+    }
+
+
+    .container1 , .container2 , .container3 , .container{
+        display:flex;
+    }
+
+    .container3{
+        flex-direction: column;
+        flex-basis:80%;
+    }
+
+    .container{
+        max-width:900px;
+        margin:0 auto;
+    }
+
+    .box1{
+        margin-top: 0px;
+    }
+
+    .box2{
+        margin-top: 0px;
+    }
+
+    .box3 , .box2{
+        flex-basis: 30%;
+        margin-right: 20px;
+        padding: 25px;
+    }
+
+    .box4 , .box1{
+        flex-basis: 70%;
+        margin-right: 20px;
+        padding: 25px;
+    }
+
+    .box5{
+        margin-top: 0px;
+        flex-basis:20%;
+        margin-right: 20px;
+        padding: 25px;
+    }
+
+    .line{
+        font-size: 10px;
+        
+    }
+
+    .box5 .line{
+        font-size:11.5px;
+    }
+
+    .verifiedgraduate{
+        font-size:10px;
+    }
+
+}
